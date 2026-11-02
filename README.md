@@ -1,14 +1,5 @@
 # unknowncheats-mcp
 
-> **Fork of [amangly/mcp-unknowncheat](https://github.com/amangly/mcp-unknowncheat)**
-> (Apache-2.0) with local improvements:
-> - **macOS fix** — upstream ran Chrome headless on Macs (no `DISPLAY` env var),
->   which dead-ends Cloudflare challenges; this fork opens visible Chrome on
->   darwin and auto-solves
-> - **`src/cli.ts` + `bun run uc`** — shell CLI driving every MCP tool without
->   an MCP host (`bun run uc search "..."`, `bun run uc thread <url>`)
-> - Extra tests. Everything else is upstream; all credit to the original author.
-
 MCP server + CLI for reading and searching the UnknownCheats forum
 (https://www.unknowncheats.me): browser-based Cloudflare handling with a
 persistent profile, forum/subforum search, thread reading, subforum crawling,
