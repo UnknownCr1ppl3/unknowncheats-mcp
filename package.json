@@ -1,0 +1,56 @@
+{
+  "name": "mcp-unknowncheatz",
+  "version": "0.3.8",
+  "type": "module",
+  "description": "MCP server for searching and reading the UnknownCheats forum",
+  "bin": {
+    "mcp-unknowncheatz": "src/index.ts"
+  },
+  "keywords": [
+    "mcp",
+    "unknowncheats",
+    "puppeteer",
+    "cloudflare",
+    "scraper",
+    "ai"
+  ],
+  "author": "amangly",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amangly/mcp-unknowncheat.git"
+  },
+  "homepage": "https://github.com/amangly/mcp-unknowncheat",
+  "bugs": {
+    "url": "https://github.com/amangly/mcp-unknowncheat/issues"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "uc": "bun run src/cli.ts",
+    "dev": "bun --watch src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test",
+    "build": "bun build src/index.ts --target=bun --outdir=dist",
+    "inspect:html": "bun run scripts/inspect-html.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.1",
+    "cheerio": "^1.2.0",
+    "puppeteer-real-browser": "1.4.4",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.2",
+    "@types/node": "^26.6.2",
+    "typescript": "^7.0.2"
+  }
+}
